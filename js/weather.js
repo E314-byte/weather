@@ -23,6 +23,7 @@ const error = document.querySelector('.error-404');
 
 saetchBox.onsubmit = (e) => {
     e.preventDefault();
+    
     let city = search.value.trim();
 
     const url = `http://api.weatherapi.com/v1/current.json?key=${APIkey}&q=${city}/`;
