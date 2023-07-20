@@ -17,6 +17,7 @@ body {
 
 .cards {
   max-width: 400px;
+  max-height: auto;
   background-color: #ffffff;
   border-radius: 30px;
   text-align: center;
