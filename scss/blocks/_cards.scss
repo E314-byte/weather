@@ -1,0 +1,79 @@
+$card-color: #ffffff;
+$button-color: #e0f6fc;
+$additionally-color: #07283d;
+
+.cards {
+  max-width: 400px;
+  max-height: 100px;
+  background-color: $card-color;
+  border-radius: 30px;
+  text-align: center;
+  padding: 30px;
+  .saetch-box {
+    input {
+      max-width: 180px;
+      max-height: 20px;
+      border: none;
+      font-size: 20px;
+      letter-spacing: 2px;
+
+      // &:before {
+      //   content: "";
+      //   background-image: url("../../img/location.png");
+      //   background-repeat: no-repeat;
+      //   background-size: cover;
+      //   min-width: 20px;
+      //   min-height: 20px;
+      // }
+    }
+    img {
+      max-width: 20px;
+      max-height: 20px;
+    }
+  }
+
+  .saerch-button {
+    min-width: 45px;
+    min-height: 45px;
+    border: none;
+    background-color: $button-color;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .weather-box {
+    img {
+      margin-top: 20px;
+      min-width: 90px;
+      min-height: 90px;
+    }
+  }
+
+  .temparatyre {
+    font-size: 80px;
+  }
+  .description {
+    max-width: 300px;
+    margin: 0 0 20px 0;
+    font-size: 20px;
+  }
+
+  .error-404 {
+    display: none;
+    img {
+      max-width: 300px;
+      max-height: 300px;
+    }
+  }
+
+  .weather-details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+    img {
+      max-width: 20px;
+      max-height: 20px;
+    }
+  }
+}

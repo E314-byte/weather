@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="icon" href="" type="image/x-icon" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Victor+Mono:wght@100;200;300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="cards">
+      <form class="saetch-box">
+        <img src="./img/location.png" />
+        <input id="iput" type="text" placeholder="Введите город" />
+        <button class="saerch-button">
+          <img src="./img/search.png" />
+        </button>
+      </form>
+      <div class="error-404">
+        <img src="./img/404.png" />
+        <p>Упс! Неверное местоположение :/</p>
+      </div>
+      <!-- <div class="weather-box">
+        <img src="" />
+        <p class="temparatyre"></p>
+        <p class="description"></p>
+      </div>
+      <div class="weather-details">
+        <div class="humidity">
+          <img src="./img/humidity.png" />
+          <div class="text">
+            <span></span>
+            <p>Влажность</p>
+          </div>
+        </div>
+        <div class="windS">
+          <img src="./img/windS.png" />
+          <div class="text">
+            <span></span>
+            <p>Скрость ветра</p>
+          </div>
+        </div>
+      </div> -->
+    </div>
+    <script src="./js/weather.js" type="module"></script>
+    <script src="./js/animation.js" type="module"></script>
+    <script src="./js/conditions.js" type="module"></script>
+  </body>
+</html>
