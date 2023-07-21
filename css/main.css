@@ -6,6 +6,23 @@
   box-sizing: border-box;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
+span {
+  margin: 0;
+  padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
 body {
   font-family: "Victor Mono", monospace;
   display: flex;
@@ -17,7 +34,7 @@ body {
 
 .cards {
   max-width: 400px;
-  max-height: auto;
+  height: auto;
   background-color: #ffffff;
   border-radius: 30px;
   text-align: center;
@@ -26,7 +43,6 @@ body {
 .cards .saetch-box input {
   max-width: 180px;
   max-height: 20px;
-  border: none;
   font-size: 20px;
   letter-spacing: 2px;
 }
@@ -71,4 +87,24 @@ body {
 .cards .weather-details img {
   max-width: 20px;
   max-height: 20px;
+}
+
+@media (max-width: 320px) {
+  .cards {
+    padding: 20px;
+  }
+  .cards .seatch-box input {
+    max-width: 140px;
+    letter-spacing: normal;
+  }
+  .cards .weather-details .text {
+    font-size: 15px;
+  }
+  .cards .error-404 img {
+    max-width: 250px;
+    max-height: 250px;
+  }
+  .cards .error-404 p {
+    max-width: 300px;
+  }
 }/*# sourceMappingURL=main.css.map */

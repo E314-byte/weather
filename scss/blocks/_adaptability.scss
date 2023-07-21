@@ -1,0 +1,25 @@
+@media (max-width: 320px) {
+  .cards {
+    padding: 20px;
+    .seatch-box {
+      input {
+        max-width: 140px;
+        letter-spacing: normal;
+      }
+    }
+    .weather-details {
+      .text {
+        font-size: 15px;
+      }
+    }
+    .error-404 {
+      img {
+        max-width: 250px;
+        max-height: 250px;
+      }
+      p {
+        max-width: 300px;
+      }
+    }
+  }
+}
