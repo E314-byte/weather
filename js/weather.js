@@ -32,7 +32,7 @@ function newCards(icon, temp, text, info, humidity, wind_kph) {
             </div>
             <div class="weather-details">
                 <div class="humidity">
-                <img src="./img/humidity.png" />
+                <img src="../img/humidity.png" />
                 <div class="text">
                     <span>${humidity}</span>
                     <p>Влажность</p>
