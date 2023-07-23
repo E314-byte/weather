@@ -30,6 +30,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #07283d;
+  overflow: hidden;
 }
 
 .cards {
