@@ -2,6 +2,7 @@ body {
   font-family: "Victor Mono", monospace;
   display: flex;
   height: 100vh;
+  overflow-y: hidden;
   align-items: center;
   justify-content: center;
   background-color: #07283d;
