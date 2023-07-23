@@ -8,6 +8,7 @@ $additionally-color: #07283d;
   border-radius: 30px;
   text-align: center;
   padding: 30px;
+  overflow: hidden;
   .saetch-box {
     input {
       max-width: 180px;
@@ -65,4 +66,13 @@ $additionally-color: #07283d;
       max-height: 20px;
     }
   }
+  // animation: card 1s;
 }
+// @keyframes card {
+//   from {
+//     max-height: 100px;
+//   }
+//   to {
+//     max-height: 600px;
+//   }
+// }

@@ -19,16 +19,17 @@ function errorCard(errorMessaga) {
 function removeCard() {
     const prevCard = document.querySelector('.weather-box');
     const prevCard1 = document.querySelector('.weather-details');
-    if (prevCard) { prevCard.remove(); prevCard1.remove(); error.style.display = "none"; }
+    if (prevCard) { prevCard.remove(); prevCard1.remove(); }
 }
 
-function newCards(icon, temp, text, info, humidity, wind_kph) {
+function newCards(icon, temp, text, info, is_day, humidity, wind_kph) {
 
     const html = `<div class="weather-box">
                 <img src="${icon}" />
                 <p class="temparatyre">${temp}<span>°C</span></p>
                 <!--<p class="description">${text}</p>-->
                 <p class="description">${info}</p>
+                <!--<p c lass="description">${is_day}</p>-->
             </div>
             <div class="weather-details">
                 <div class="humidity">
@@ -49,6 +50,8 @@ function newCards(icon, temp, text, info, humidity, wind_kph) {
     //отрисовка новой карточки
     saetchBox.insertAdjacentHTML('afterend', html);
 }
+// авто фокус на input 
+search.focus();
 
 saetchBox.onsubmit = (e) => {
     e.preventDefault();
@@ -58,6 +61,8 @@ saetchBox.onsubmit = (e) => {
     fetch(url).then((respons) => {
         return respons.json();
     }).then((data) => {
+        console.log(data);
+
         errorCard(data.error);
         removeCard();
         const info = conditions.find((el) => el.code === data.current.condition.code);
@@ -66,6 +71,7 @@ saetchBox.onsubmit = (e) => {
             data.current.temp_c,
             data.current.condition.text,
             data.current.is_day ? info.languages[23]['day_text'] : info.languages[23]['night_text'],
+            data.current.is_day,
             data.current.humidity,
             data.current.wind_kph
         );
