@@ -76,6 +76,7 @@ body {
   display: none;
 }
 .cards .error-404 img {
+  margin: 25px 0 25px 0;
   max-width: 300px;
   max-height: 300px;
 }
