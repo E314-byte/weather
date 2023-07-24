@@ -61,7 +61,6 @@ saetchBox.onsubmit = (e) => {
     fetch(url).then((respons) => {
         return respons.json();
     }).then((data) => {
-        console.log(data);
 
         errorCard(data.error);
         removeCard();
