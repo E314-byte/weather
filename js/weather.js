@@ -4,7 +4,7 @@ import conditions from "./conditions.js";
 const APIkey = '0f0f41aa8d604c1fbc1145233231407';
 //http://api.weatherapi.com/v1/current.json?key=0f0f41aa8d604c1fbc1145233231407&q=London
 
-const search = document.querySelector('#iput');
+const search = document.querySelector('#input');
 const saetchBox = document.querySelector('.saetch-box');
 const error = document.querySelector('.error-404');
 
