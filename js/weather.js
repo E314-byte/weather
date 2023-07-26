@@ -28,7 +28,7 @@ function newCards(icon, temp, text, info, is_day, humidity, wind_kph) {
                 <img src="${icon}" />
                 <p class="temparatyre">${temp}<span>°C</span></p>
                 <!--<p class="description">${text}</p>-->
-                <p class="description"></p>
+                <p class="description">${info}</p>
                 <!--<p c lass="description">${is_day}</p>-->
             </div>
             <div class="weather-details">
